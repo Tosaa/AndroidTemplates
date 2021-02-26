@@ -1,6 +1,5 @@
-package open.source.template.exampleapplication
+package open.source.template.exampleapplication.about
 
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -20,7 +19,8 @@ class AboutFragment : Fragment() {
     ): View? {
         binding = AboutFragmentBinding.inflate(layoutInflater, container, false)
         binding.lifecycleOwner = this
-        viewModel = AboutViewModel()
+        viewModel =
+            AboutViewModel()
         return binding.root
     }
 

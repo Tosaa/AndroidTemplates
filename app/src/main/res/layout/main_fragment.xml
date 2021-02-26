@@ -6,31 +6,22 @@
 
         <variable
             name="viewmodel"
-            type="open.source.template.exampleapplication.MainViewModel" />
+            type="open.source.template.exampleapplication.main.MainViewModel" />
     </data>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".MainFragment">
+        tools:context=".main.MainFragment">
 
         <com.google.android.material.textview.MaterialTextView
+            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textAlignment="center"
             android:text="Main" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/about_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="About" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/settings_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Settings" />
 
     </LinearLayout>
 </layout>

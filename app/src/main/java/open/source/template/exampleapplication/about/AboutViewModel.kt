@@ -1,4 +1,4 @@
-package open.source.template.exampleapplication
+package open.source.template.exampleapplication.about
 
 import androidx.lifecycle.ViewModel
 
