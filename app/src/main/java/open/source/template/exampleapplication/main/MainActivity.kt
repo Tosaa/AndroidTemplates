@@ -21,8 +21,10 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
 
+        binding.menuBar.setNavigationOnClickListener {
+            navController.popBackStack(R.id.mainFragment,false)
+        }
         binding.menuBar.setOnMenuItemClickListener {
-
             when (it.title.toString()) {
                 "about" -> {
                     navController.popBackStack(R.id.mainFragment, false)
