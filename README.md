@@ -11,7 +11,7 @@ The Project uses:
 # BASICS:
 - **MVVM** (Model View ViewModel)
 - **One Module only** (This approach might not be the best when it comes to multiple modules in the project)
-
+- **Kotlin** (Code generation for Java is not within the Dependencies)
 
 # Architecture
 This Repo will provide 3 Screens:
