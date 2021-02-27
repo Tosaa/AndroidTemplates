@@ -5,18 +5,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import dagger.hilt.android.AndroidEntryPoint
 import open.source.template.exampleapplication.databinding.MainFragmentBinding
 
+@AndroidEntryPoint
 class MainFragment : Fragment() {
 
-    //TODO: Use DI
-    private lateinit var viewModel: MainViewModel
+
+    private val viewModel: MainViewModel by viewModels()
     private lateinit var binding: MainFragmentBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        viewModel = MainViewModel()
         binding = MainFragmentBinding.inflate(layoutInflater, container, false)
         binding.lifecycleOwner = this
         binding.viewmodel = viewModel

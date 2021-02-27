@@ -1,7 +1,8 @@
 package open.source.template.exampleapplication.about
 
 import androidx.lifecycle.ViewModel
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-class AboutViewModel : ViewModel() {
-    // TODO: Implement the ViewModel
-}
+@HiltViewModel
+class AboutViewModel @Inject constructor() : ViewModel()
