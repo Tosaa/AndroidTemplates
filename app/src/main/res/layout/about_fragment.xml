@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+<variable
+    name="prefs"
+    type="String"/>
     </data>
 
     <LinearLayout
@@ -12,12 +14,17 @@
         android:orientation="vertical"
         tools:context=".about.AboutFragment">
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             style="@style/MaterialAlertDialog.MaterialComponents.Title.Text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="About"
             android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/example_preference_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 </layout>
