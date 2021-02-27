@@ -3,9 +3,6 @@ package open.source.template.exampleapplication.main
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import androidx.navigation.ActivityNavigator
-import androidx.navigation.dynamicfeatures.DynamicActivityNavigator
-import androidx.navigation.fragment.FragmentNavigator
 import androidx.navigation.fragment.NavHostFragment
 import open.source.template.exampleapplication.R
 import open.source.template.exampleapplication.databinding.ActivityMainBinding
@@ -42,7 +39,5 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
-
-
     }
 }

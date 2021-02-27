@@ -26,13 +26,12 @@
 
                 <com.google.android.material.appbar.MaterialToolbar
                     android:id="@+id/menu_bar"
+                    style="@style/Widget.MaterialComponents.Toolbar.Primary"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
-                    app:title="Test"
-                    app:navigationIcon="@drawable/home_icon"
                     app:menu="@menu/top_bar_menu"
-                    style="@style/Widget.MaterialComponents.Toolbar.Primary"
-                    />
+                    app:navigationIcon="@drawable/home_icon"
+                    app:title="Test" />
 
             </com.google.android.material.appbar.AppBarLayout>
         </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -2,5 +2,4 @@
     <string name="app_name">ExampleApplication</string>
     <string name="examples">Examples</string>
     <string name="examplePreference">Example Preference</string>
-    <!-- Preference Titles -->
 </resources>

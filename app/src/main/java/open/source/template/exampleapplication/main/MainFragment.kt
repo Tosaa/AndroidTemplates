@@ -1,11 +1,10 @@
 package open.source.template.exampleapplication.main
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
+import androidx.fragment.app.Fragment
 import open.source.template.exampleapplication.databinding.MainFragmentBinding
 
 class MainFragment : Fragment() {
